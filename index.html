@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>معلومة في 30 ثانية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- شاشة البداية -->
+<div id="intro">
+  <h1 id="introText">استمتع مع أيوب</h1>
+  <button id="startBtn">ابدأ</button>
+</div>
+
+<!-- الموقع الرئيسي -->
+<div id="mainSite" style="display:none;">
+  <canvas id="particleCanvas"></canvas>
+  <div class="bg-name" id="bgName">محفوظي</div>
+  <div class="header">
+    <div>🧠 معلومة في 30 ثانية</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="mode-btn" onclick="toggleMode()">🌗</div>
+  </div>
+  <div class="side-menu" id="menu">
+    <button onclick="home()">🏠 الرئيسية</button>
+    <button onclick="facts()">🧠 معلومات</button>
+    <button onclick="fun()">🎲 تسلية</button>
+    <button onclick="game()">🎮 لعبة</button>
+    <button onclick="progress()">⭐ مستواك</button>
+    <button onclick="share()">📤 مشاركة</button>
+    <button onclick="about()">ℹ️ عن الموقع</button>
+  </div>
+  <div class="container" id="content">
+    <h2>مرحبًا 👋</h2>
+    <p>افتح القائمة ☰ واستمتع بالموقع</p>
+  </div>
+</div>
+
+<!-- الأصوات -->
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="successSound" src="sounds/success.mp3"></audio>
+<audio id="errorSound" src="sounds/error.mp3"></audio>
+<audio id="welcomeSound" src="sounds/welcome.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
